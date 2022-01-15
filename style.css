@@ -37,10 +37,9 @@ main{
     margin-top: 100px;
     
 }
-.journey-head{
-    font-size: 40px;
-}
+
 #journey-head{
+    font-size: 50px;
     margin-top: 0;
     margin-bottom: 25px;
 }
@@ -50,7 +49,11 @@ main{
     border-radius: 25px;
     text-decoration: none;
     color:white;
+    transition:1s;
     }
+.button:hover{
+    background-color: rgb(255, 0, 128);
+}
 #paragraph{
     margin-bottom: 38px;
 }
@@ -64,15 +67,8 @@ main{
 .image>img{
     margin-top: 15px;
     
-    
-    
-    
 }
-.image>img:hover{
-    width: 300px;
-  height: 300px;
-  transition-duration: 5s;
-}
+
 
 /* first part end*/
 
@@ -104,6 +100,26 @@ main{
     margin-left: 970px;
     margin-top: 25px;
     color: black;
+    transition:0.5s;
+}
+.see-more:hover{
+    color: rgb(255, 0, 128);
+}
+/* extra */
+.extra{
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    background-color: white;
+    
+}
+.extra-info{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.extra-text{
+    font-size: 40px;
 }
 
 /* footer */
@@ -163,4 +179,71 @@ footer{
     .see-more{
         margin-left: 250px ;
     }
+    .extra{
+        width: 100%;
+        height: 250px;
+        background-color: white;
+        
+    }
+    .extra-text{
+        font-size: 25px;
+    }
 }
+
+/* For Mobile Device end */
+
+
+/* For Tablet Device */
+@media only screen and (min-width: 688px) and (max-width: 992px){
+    
+    header{
+        display: block;
+        
+    }
+    .header .heading{
+        width: 100%;
+        align-items: center;
+    }
+    main{
+        display: block;
+    }
+    
+    .first-part{
+        display: block;
+    }
+    #journey-head{
+        width: 100%;
+        font-size: 50px;
+    }
+    .image{
+        width: 100%;
+        margin-left: 0;
+    }
+    #pc{
+        margin-top: 250px;
+    }
+
+    .samples{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        margin-left: 20px;
+        box-shadow: 2px;
+    }
+
+    .see-more{
+        margin-left: 580px ;
+    }
+    .extra{
+        width: 100%;
+        height: 250px;
+        background-color: white;
+        
+    }
+    .extra-text{
+        font-size: 25px;
+    }
+}
+
+
+/* For Tablet Device End */
