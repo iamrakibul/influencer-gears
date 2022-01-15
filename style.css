@@ -11,7 +11,6 @@ header{
 .header{
     width: 1188px;
     height: 50px;
-    background-color: wheat;
 }
 .heading{
     width: 243px;
@@ -36,7 +35,10 @@ main{
     width: 582px;
     height: 270px;
     margin-top: 100px;
-    background-color: aquamarine;
+    
+}
+.journey-head{
+    font-size: 40px;
 }
 #journey-head{
     margin-top: 0;
@@ -44,7 +46,7 @@ main{
 }
 .button{
     padding: 10px 25px;
-    background-color: #E02C6D;
+    background-color: black;
     border-radius: 25px;
     text-decoration: none;
     color:white;
@@ -57,10 +59,19 @@ main{
     height: 475px;
     margin-left: 130px;
     
+    
 }
-.image img{
+.image>img{
     margin-top: 15px;
-    background-image: url('../influencer-gears/images/Circle\ design.svg');
+    
+    
+    
+    
+}
+.image>img:hover{
+    width: 300px;
+  height: 300px;
+  transition-duration: 5s;
 }
 
 /* first part end*/
@@ -87,5 +98,69 @@ main{
 }
 
 /* Samples End */
+.see-more{
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 970px;
+    margin-top: 25px;
+    color: black;
+}
+
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    color: white;
+    align-items: center;
+    padding: 25px 0px;
+}
+/* footer end */
 
 
+/* media quaries */
+
+/* For Mobile Device */
+@media only screen and (max-width:688px){
+    
+    header{
+        display: block;
+        
+    }
+    .header .heading{
+        width: 100%;
+        align-items: center;
+    }
+    main{
+        display: block;
+    }
+    
+    .first-part{
+        display: block;
+    }
+    #journey-head{
+        width: 100%;
+        font-size: 30px;
+    }
+    .image{
+        width: 100%;
+        margin-left: 0;
+    }
+    #pc{
+        margin-top: 250px;
+    }
+
+    .samples{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 20px;
+        box-shadow: 2px;
+    }
+
+    .see-more{
+        margin-left: 250px ;
+    }
+}
