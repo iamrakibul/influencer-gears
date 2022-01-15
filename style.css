@@ -21,7 +21,8 @@ header{
 
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 /* first part */
 
@@ -37,6 +38,10 @@ main{
     margin-top: 100px;
     background-color: aquamarine;
 }
+#journey-head{
+    margin-top: 0;
+    margin-bottom: 25px;
+}
 .button{
     padding: 10px 25px;
     background-color: #E02C6D;
@@ -50,6 +55,37 @@ main{
 .image{
     width: 475px;
     height: 475px;
-    background-image: url(../influencer-gears/images/camera.png);    
+    margin-left: 130px;
+    
 }
+.image img{
+    margin-top: 15px;
+    background-image: url('../influencer-gears/images/Circle\ design.svg');
+}
+
+/* first part end*/
+
+/* Samples */
+
+.samples{
+    width: 1047px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.sample{
+    width:329px ;
+    height:525px ;
+    padding-left: 25px;
+    padding-top: 25px;
+    box-shadow: 5px 5px 10px 5px rgb(194, 191, 191);
+}
+.filled{
+    color: orange;
+}
+.empty{
+    color: #aaa6a6;
+}
+
+/* Samples End */
+
 
